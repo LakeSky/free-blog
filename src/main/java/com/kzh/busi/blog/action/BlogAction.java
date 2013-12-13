@@ -2,6 +2,7 @@ package com.kzh.busi.blog.action;
 
 import com.kzh.busi.blog.entity.Blog;
 import com.kzh.busi.blog.service.BlogService;
+import com.kzh.util.PrintWriter;
 import com.kzh.util.struts.BaseAction;
 import org.apache.struts2.convention.annotation.ResultPath;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -49,6 +50,13 @@ public class BlogAction extends BaseAction {
     public String edit() {
 
         return "edit";
+    }
+
+    //查询当前状态
+    public String queryState() {
+        blog = (Blog) service.getEntity(Blog.class, blog.getId());
+        PrintWriter.print(blog.getState());
+        return null;
     }
 
     //--------get/set-------------------------------

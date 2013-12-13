@@ -19,6 +19,8 @@
             <td>
                 <s:textfield name="blog.title"/>
             </td>
+        </tr>
+        <tr>
             <td>
                 <s:textarea name="blog.content"/>
             </td>
