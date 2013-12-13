@@ -10,6 +10,7 @@
 <html>
 <head>
     <title></title>
+    <%@include file="/component/header.jsp" %>
 </head>
 <body>
 <s:form action="blog" method="post">

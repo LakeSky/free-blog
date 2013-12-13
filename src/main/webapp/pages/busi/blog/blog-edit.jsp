@@ -10,6 +10,7 @@
 <html>
 <head>
     <title></title>
+
 </head>
 <body>
 <s:form action="blog" method="post">
