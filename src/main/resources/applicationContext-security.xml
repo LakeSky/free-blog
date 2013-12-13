@@ -52,20 +52,20 @@
     <beans:bean id="mySecurityMetadataSource" class="com.kzh.system.security.MySecurityMetadataSource"/>
     <beans:bean id="myUserDetailServiceImpl" class="com.kzh.system.security.MyUserDetailServiceImpl"/>
 
-    <!--<authentication-manager>
+    <authentication-manager>
         <authentication-provider>
-            &lt;!&ndash;<password-encoder hash="sha">
+            <!--<password-encoder hash="sha">
                 <salt-source user-property="username"/>
-            </password-encoder>&ndash;&gt;
+            </password-encoder>-->
             <user-service>
-                <user name="jimi" password="jimispassword" authorities="ROLE_USER, ROLE_ADMIN"/>
+                <user name="lisi" password="pass" authorities="ROLE_USER, ROLE_ADMIN"/>
                 <user name="bob" password="bobspassword" authorities="ROLE_USER"/>
-                <user name="jimi1"
+                <!--<user name="jimi1"
                       password="d7e6351eaa13189a5a3641bab846c8e8c69ba39f"
                       authorities="ROLE_USER, ROLE_ADMIN"/>
                 <user name="bob1"
                       password="4e7421b1b8765d8f9406d87e7cc6aa784c4ab97f"
-                      authorities="ROLE_USER"/>
+                      authorities="ROLE_USER"/>-->
             </user-service>
         </authentication-provider>
 
@@ -73,6 +73,6 @@
             <jdbc-user-service data-source-ref="dataSource"/>
         </authentication-provider>
 
-    </authentication-manager>-->
+    </authentication-manager>
 
 </beans:beans>

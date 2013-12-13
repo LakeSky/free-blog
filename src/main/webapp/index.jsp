@@ -5,6 +5,7 @@
 <div data-options="region:'north'" style="height:50px">
     <%--<c:url value="/j_spring_security_logout" var="logoutUrl"/>--%>
     <a href="${pageContext.request.contextPath}/j_spring_security_logout">Log Out</a>
+    <a href="blog.do">博客</a>
 </div>
 <div data-options="region:'south',split:true" style="height:50px;"></div>
 <div data-options="region:'west',split:true" title="菜单" style="width:180px;">

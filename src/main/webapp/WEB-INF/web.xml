@@ -40,12 +40,12 @@
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
 
-    <listener>
+    <!--<listener>
         <listener-class>com.kzh.system.statistics.OnlineCounterListener</listener-class>
     </listener>
     <listener>
         <listener-class>com.kzh.util.timer.TimerListener</listener-class>
-    </listener>
+    </listener>-->
 
     <session-config>
         <session-timeout>6</session-timeout>
